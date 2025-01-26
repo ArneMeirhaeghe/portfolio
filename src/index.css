@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #001219;
+  --secondary-color: #94d2bd;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.navLink {
+  color: var(--primary-color);
+}
+
+.navLink:hover {
+  color: var(--secondary-color);
+}
+
+.dropdown {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* Globale basisregels */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

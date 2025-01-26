@@ -1,0 +1,36 @@
+.projects {
+    padding: 5rem 2rem;
+    background-color: var(--color-yellow);
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: var(--color-orange);
+    color: var(--color-sand);
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
