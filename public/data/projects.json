@@ -1,0 +1,58 @@
+[
+  {
+    "id": "virtuele-tour-builder",
+    "title": "Vlot Verhuurd - Virtuele Tour Builder",
+    "type": "school",
+    "year": 2025,
+    "summary": {
+      "nl": "Eindwerk: React + .NET platform om jeugdverblijven makkelijk online te verhuren.",
+      "en": "Thesis project: React + .NET platform to rent youth accommodations online."
+    },
+    "tech": ["React", "TypeScript", ".NET", "REST API", "UX"],
+    "liveUrl": "https://ksainv-frontend.onrender.com/#/login",
+    "repoUrl": "https://github.com/ArneMeirhaeghe/eindwerk.git",
+    "images": ["/images/projects/virtuele-tour.jpg"]
+  },
+
+  {
+    "id": "escape-room",
+    "title": "Escape Room Project",
+    "type": "hobby",
+    "year": 2024,
+    "summary": {
+      "nl": "Interactieve escape game met Arduino’s en Raspberry Pi’s. Jij als teamlead.",
+      "en": "Interactive escape game with Arduinos and Raspberry Pis. You as team lead."
+    },
+    "tech": ["React", "Arduino", "Raspberry Pi", "WebSocket"],
+    "liveUrl": "https://defcon1-mu.vercel.app/",
+    "repoUrl": "",
+    "images": ["/images/projects/escape-room.jpg"]
+  },
+   {
+    "id": "3D-room",
+    "title": "3D room",
+    "type": "school",
+    "year": 2024,
+    "summary": {
+      "nl": "3D kamer in Three.js met interactieve objecten en animaties.",
+      "en": "3D room in Three.js with interactive objects and animations."
+    },
+    "tech": ["React", "Three.js", "Blender"],
+    "liveUrl": "https://room-lmaqpm5ef-arnemeirhaeghes-projects.vercel.app/",
+    "repoUrl": "https://github.com/ArneMeirhaeghe/room.git",
+    "images": ["/images/projects/room.jpg"]
+  },   {
+    "id": "Jeugdbeweging-Wireframes",
+    "title": "KSA site wireframes",
+    "type": "hobby",
+    "year": 2025,
+    "summary": {
+      "nl": "redesign van de KSA Deinze website met wireframes",
+      "en": "redesign of the KSA Deinze website with wireframes"
+    },
+    "tech": ["figma", "photoshop" ],
+    "liveUrl": "/images/projects/KSA-wireframes.pdf",
+    "repoUrl": "",
+    "images": ["/images/projects/Ksa_Jos_Transp.png"]
+  }
+]

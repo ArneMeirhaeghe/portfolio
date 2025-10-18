@@ -1,0 +1,75 @@
+{
+  "naam": "Arne Meirhaeghe",
+  "taalDefault": "nl",
+  "contact": {
+    "email": "meirhaeghe123@gmail.com",
+    "tel": "0478 33 63 27",
+    "locatie": "Deinze - Astene, België",
+    "links": {
+      "github": "https://github.com/ArneMeirhaeghe?tab=repositories",
+      "linkedin": "https://www.linkedin.com/in/arne-meirhaeghe-421b1b19a"
+    }
+  },
+  "rol_doelen": ["Junior Full Stack Developer"],
+  "pitch": {
+    "nl": "Leergierige en creatieve full stack developer met een passie voor technologie, UX en teamwork.",
+    "en": "Curious and creative full-stack developer with a passion for technology, UX, and teamwork."
+  },
+  "waarden": ["betrouwbaar", "hands-on", "samenwerken", "leren", "creatief"],
+  "praktisch": {
+    "beschikbaar_vanaf": "onmiddellijk",
+    "uren": "voltijds",
+    "hybride": "ja",
+    "rijbewijs": "B"
+  },
+  "skills_top": [
+    { "skill": "JavaScript / TypeScript", "niveau": "gevorderd", "bewijs": "Diverse projecten met React en Node.js" },
+    { "skill": "React / Next.js", "niveau": "gevorderd", "bewijs": "Frontend voor virtuele tour builder & escape game" },
+    { "skill": ".NET (C#)", "niveau": "goed", "bewijs": "Backend voor eindwerk en stageprojecten bij Metanous" },
+    { "skill": "PHP / Laravel", "niveau": "basis", "bewijs": "Schoolprojecten en CMS-sites" },
+    { "skill": "UX / UI Design", "niveau": "goed", "bewijs": "Meerdere UX/UI-projecten tijdens opleiding" },
+    { "skill": "Databases & API’s", "niveau": "goed", "bewijs": "MySQL, MongoDB, REST & GraphQL API’s" },
+    { "skill": "Hardware-integratie", "niveau": "goed", "bewijs": "Escape game met Arduino & Raspberry Pi" },
+    { "skill": "Teamleiding & samenwerking", "niveau": "sterk", "bewijs": "Hoofdleiding KSA Deinze" }
+
+  ],
+  "ervaring_kern": [
+    {
+      "titel": "Full stack developer (Stage)",
+      "bedrijf": "Metanous, De Pinte",
+      "periode": "februari 2025 – april 2025",
+      "impact": [
+        "Werkte met .NET backend en React frontend",
+        "Bouwde een dashboard tool om bedrijfsprojecten te monitoren (alerts via SMS/email)",
+        "Proof of Concept voor nummerplaatherkenning in C#"
+      ]
+    },
+    {
+      "titel": "Eindwerk – Virtuele tour builder",
+      "periode": "2025",
+      "impact": [
+        "React frontend en .NET backend",
+        "Platform om jeugdverblijven eenvoudig online te verhuren",
+        "Focus op gebruiksvriendelijkheid en automatisatie van data"
+      ]
+    },
+    {
+      "titel": "Escape Room Project – Groepswerk",
+      "periode": "2024",
+      "impact": [
+        "Teamlead voor interactieve escape game met Arduino’s en Raspberry Pi’s",
+        "Frontend in React, communicatie tussen hardware en webserver opgezet",
+        "Project groeide uit tot eigen hobbyproject"
+      ]
+    },
+    {
+      "titel": "Hoofdleiding – KSA Deinze",
+      "periode": "2022 – 2024",
+      "impact": [
+        "Leidde en motiveerde een team van leiding",
+        "Organiseerde kampen en evenementen (80+ deelnemers)",
+        "Verantwoordelijk voor planning, veiligheid en communicatie"
+      ]
+    }
+  ]
+}
