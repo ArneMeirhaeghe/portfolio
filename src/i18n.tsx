@@ -29,26 +29,35 @@ const dicts: Record<Lang, Dict> = {
     made_by: 'Gemaakt door',
     location: 'Locatie',
     phone: 'Telefoon',
+    github: 'GitHub',
+    linkedin: 'LinkedIn',
 
-    // ABOUT + VALUES (nieuw)
+    // ABOUT + VALUES
     about_title: 'Over mij',
     about_subtitle: 'Wie ik ben en wat mij drijft',
     about_p1_a: 'Ik ben Arne Meirhaeghe, een leergierige en creatieve full stack developer met een passie voor technologie, UX en teamwork.',
     about_p1_b: 'Met ervaring in React, .NET en hardware-integratie bouw ik oplossingen die zowel technisch sterk als gebruiksvriendelijk zijn.',
-    about_p2: 'Mijn achtergrond als hoofdleiding bij KSA Deinze heeft me geleerd hoe belangrijk communicatie, verantwoordelijkheid en samenwerking zijn — vaardigheden die ik vandaag inzet in elk project.',
-    about_p3: 'Ik geloof in groeien door te doen: leren, experimenteren met nieuwe technologieën en samen bouwen aan projecten die impact hebben.',
-
+    about_ksa_status: 'Ik ben ex-leiding bij KSA Deinze, maar nog steeds ondersteunend actief: ik help waar nodig, denk mee en zet graag mijn organisatie-ervaring in.',
+    about_p2: 'Mijn achtergrond als leiding leerde me hoe belangrijk communicatie, verantwoordelijkheid en samenwerking zijn — skills die ik dagelijks inzet.',
+    about_p3: 'Ik geloof in groeien door te doen: blijven leren, experimenteren met nieuwe technologieën en samen bouwen aan projecten die impact hebben.',
     values_title: 'Waarden',
     value_reliable: 'Betrouwbaar & betrokken',
     value_handson: 'Hands-on & leergierig',
     value_collab: 'Samenwerken & leiden',
     value_creative: 'Creatief & oplossingsgericht',
-
-    // HOBBIES
     hobbies_title: 'Hobby’s',
     hobby_guitar: 'Gitaar spelen',
     hobby_programming: 'Side-projects & programmeren',
-    hobby_ksalead: 'KSA: organiseren & leiding geven',
+    hobby_cycling: 'Fietsen',
+    hobby_swimming: 'Zwemmen',
+    hobby_gaming: 'Gamen (af en toe)',
+    hobby_friends: 'Uitgaan met vrienden',
+    hobby_ksalead: 'KSA: ondersteunen & organiseren',
+    about_portrait_alt: 'Portret van Arne Meirhaeghe',
+
+    // CONTACT
+    contact_intro: 'Graag licht ik dit toe in een gesprek.',
+    cta_plan_meeting: 'Plan gesprek',
   },
 
   en: {
@@ -76,26 +85,35 @@ const dicts: Record<Lang, Dict> = {
     made_by: 'Made by',
     location: 'Location',
     phone: 'Phone',
+    github: 'GitHub',
+    linkedin: 'LinkedIn',
 
-    // ABOUT + VALUES (new)
+    // ABOUT + VALUES
     about_title: 'About me',
     about_subtitle: 'Who I am and what drives me',
     about_p1_a: 'I’m Arne Meirhaeghe, a curious and creative full-stack developer with a passion for technology, UX and teamwork.',
     about_p1_b: 'With experience in React, .NET and hardware integration I build solutions that are both technically solid and user-friendly.',
-    about_p2: 'My background as head leader at KSA Deinze taught me the importance of communication, responsibility and collaboration — skills I apply in every project.',
+    about_ksa_status: 'I’m a former KSA leader and still actively supportive: I help where needed, contribute ideas and apply my organizing experience.',
+    about_p2: 'My background as a leader taught me the importance of communication, responsibility and collaboration — skills I use every day.',
     about_p3: 'I believe in learning by doing: keep learning, experiment with new technologies and build meaningful projects together.',
-
     values_title: 'Values',
     value_reliable: 'Reliable & engaged',
     value_handson: 'Hands-on & eager to learn',
     value_collab: 'Collaboration & leadership',
     value_creative: 'Creative & solution-oriented',
-
-    // HOBBIES
     hobbies_title: 'Hobbies',
     hobby_guitar: 'Playing guitar',
     hobby_programming: 'Side-projects & coding',
-    hobby_ksalead: 'KSA: organizing & leadership',
+    hobby_cycling: 'Cycling',
+    hobby_swimming: 'Swimming',
+    hobby_gaming: 'Gaming (occasionally)',
+    hobby_friends: 'Going out with friends',
+    hobby_ksalead: 'KSA: supporting & organizing',
+    about_portrait_alt: 'Portrait of Arne Meirhaeghe',
+
+    // CONTACT
+    contact_intro: 'I’d be happy to tell you more in a call.',
+    cta_plan_meeting: 'Schedule a call',
   }
 }
 

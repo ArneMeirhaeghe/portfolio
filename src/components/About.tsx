@@ -2,26 +2,35 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Section from "./Section";
 import { useI18n } from "@/i18n";
-import { Heart, Lightbulb, Users, Wrench, Music, Code } from "lucide-react";
+import {
+  Heart,
+  Lightbulb,
+  Users,
+  Wrench,
+  Music,
+  Code,
+  Bike,
+  Waves,
+  Gamepad2,
+  PartyPopper,
+} from "lucide-react";
 
 type Profile = {
   waarden?: string[];
-  hobbies?: string[]; // optioneel uit profile.json
+  hobbies?: string[];
 };
 
 export default function AboutMe() {
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
   const [profile, setProfile] = useState<Profile | null>(null);
 
   useEffect(() => {
-    // Proberen in te laden uit profile.json (optioneel); veilig fallbacken.
     fetch("/data/profile.json")
       .then((r) => r.json())
       .then((d) => setProfile({ waarden: d.waarden, hobbies: d.hobbies }))
       .catch(() => setProfile(null));
   }, []);
 
-  // Vooraf gedefinieerde waarden (consistent met jouw persona)
   const values = [
     { icon: <Heart className="w-5 h-5 text-pink-500" />, key: "value_reliable" },
     { icon: <Wrench className="w-5 h-5 text-blue-500" />, key: "value_handson" },
@@ -29,99 +38,97 @@ export default function AboutMe() {
     { icon: <Lightbulb className="w-5 h-5 text-yellow-500" />, key: "value_creative" },
   ];
 
-  // Hobby’s – uit JSON indien aanwezig, anders nette defaults
-  // We mappen de labels via i18n-keys zodat NL/EN werkt.
-  const hobbiesFallback = ["hobby_guitar", "hobby_programming", "hobby_ksalead"];
-  const hobbiesKeys =
-    (profile?.hobbies?.length
-      ? profile.hobbies.map((h) => {
-          // probeer een i18n-key match te vinden; anders toon raw tekst uit JSON
-          const normalized = h.toLowerCase();
-          if (normalized.includes("gitaar")) return "hobby_guitar";
-          if (normalized.includes("ksa")) return "hobby_ksalead";
-          if (normalized.includes("code") || normalized.includes("program")) return "hobby_programming";
-          return h; // direct printen als t(key) hem niet kent
-        })
-      : hobbiesFallback) as string[];
+  const hobbyKeys = [
+    "hobby_guitar",
+    "hobby_programming",
+    "hobby_cycling",
+    "hobby_swimming",
+    "hobby_gaming",
+    "hobby_friends",
+    "hobby_ksalead",
+  ];
+
+  const iconFor = (key: string) => {
+    switch (key) {
+      case "hobby_guitar":
+        return <Music className="w-5 h-5 text-purple-500" />;
+      case "hobby_programming":
+        return <Code className="w-5 h-5 text-blue-500" />;
+      case "hobby_cycling":
+        return <Bike className="w-5 h-5 text-emerald-500" />;
+      case "hobby_swimming":
+        return <Waves className="w-5 h-5 text-cyan-500" />;
+      case "hobby_gaming":
+        return <Gamepad2 className="w-5 h-5 text-orange-500" />;
+      case "hobby_friends":
+        return <PartyPopper className="w-5 h-5 text-pink-500" />;
+      case "hobby_ksalead":
+        return <Users className="w-5 h-5 text-amber-500" />;
+      default:
+        return <Lightbulb className="w-5 h-5 text-yellow-500" />;
+    }
+  };
 
   return (
-    <Section
-      id="about"
-      title={t("about_title")}
-      subtitle={t("about_subtitle")}
-      centerHeader
-    >
+    <Section id="about" title={t("about_title")} subtitle={t("about_subtitle")}>
       <motion.div
-        className="relative space-y-8 max-w-4xl mx-auto text-lg leading-relaxed text-neutral-700 dark:text-neutral-300"
+        className="space-y-8 text-lg leading-relaxed text-muted-foreground max-w-3xl mx-auto relative"
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        {/* Intro alinea's */}
+        {/* Foto rechts */}
+        <div className="absolute hidden lg:block right-[-160px] top-6 w-40 h-40">
+          <div className="absolute -inset-4 blur-2xl bg-gradient-to-br from-blue-500/30 via-purple-500/20 to-transparent rounded-full opacity-60" />
+          <img
+            src="/images/portrait.jpg"
+            alt={t("about_portrait_alt")}
+            className="w-40 h-40 object-cover rounded-full border border-border shadow-md"
+          />
+        </div>
+
+        {/* Tekst */}
         <p>
           {t("about_p1_a")} {t("about_p1_b")}
         </p>
-        <p>{t("about_p2")}</p>
 
-        {/* Waarden (geen dubbele info; compact met iconen) */}
+        <p>{t("about_ksa_status")}</p>
+
+        {/* Waarden */}
         <div>
           <h3 className="text-base font-semibold mb-3">{t("values_title")}</h3>
-          <div className="grid sm:grid-cols-2 gap-3">
+          <div className="grid sm:grid-cols-2 gap-4">
             {values.map((v, i) => (
               <motion.div
                 key={i}
-                className="flex items-center gap-3 p-4 rounded-2xl bg-white/60 dark:bg-neutral-900/50 backdrop-blur-sm border border-neutral-200 dark:border-neutral-800 hover:shadow-[0_0_25px_rgba(124,58,237,0.18)] transition"
-                whileHover={{ scale: 1.02 }}
+                className="flex items-center gap-3 p-4 rounded-2xl bg-card/60 backdrop-blur-sm border border-border hover:border-primary/40 transition"
+                whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.2 }}
               >
                 {v.icon}
-                <span className="text-sm font-medium">
-                  {/* if key exists use t(key), else show key string */}
-                  {t(v.key)}
-                </span>
+                <span className="text-sm font-medium">{t(v.key)}</span>
               </motion.div>
             ))}
           </div>
         </div>
 
-        {/* Hobby’s (persoonlijke kleur, kort en to the point) */}
+        {/* Hobby’s */}
         <div>
           <h3 className="text-base font-semibold mb-3">{t("hobbies_title")}</h3>
-          <div className="grid sm:grid-cols-3 gap-3">
-            {hobbiesKeys.map((h, i) => {
-              // kies een passend icoon per hobby-key of default
-              const icon =
-                h === "hobby_guitar" ? (
-                  <Music className="w-5 h-5 text-purple-500" />
-                ) : h === "hobby_programming" ? (
-                  <Code className="w-5 h-5 text-blue-500" />
-                ) : h === "hobby_ksalead" ? (
-                  <Users className="w-5 h-5 text-emerald-500" />
-                ) : (
-                  <Lightbulb className="w-5 h-5 text-yellow-500" />
-                );
-
-              // als het een bekende i18n-key is: t(h), anders toon raw tekst
-              const label = t(h);
-              const isTranslated = label !== h;
-
-              return (
-                <div
-                  key={i}
-                  className="flex items-center gap-3 p-4 rounded-2xl bg-white/60 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-800"
-                >
-                  {icon}
-                  <span className="text-sm font-medium">
-                    {isTranslated ? label : h}
-                  </span>
-                </div>
-              );
-            })}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {hobbyKeys.map((key, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-3 p-4 rounded-2xl bg-card/60 backdrop-blur-sm border border-border hover:border-primary/30 transition"
+              >
+                {iconFor(key)}
+                <span className="text-sm font-medium">{t(key)}</span>
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Slotzin */}
         <p>{t("about_p3")}</p>
       </motion.div>
     </Section>

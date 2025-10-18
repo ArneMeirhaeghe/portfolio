@@ -35,41 +35,53 @@
   ],
   "ervaring_kern": [
     {
-      "titel": "Full stack developer (Stage)",
-      "bedrijf": "Metanous, De Pinte",
-      "periode": "februari 2025 – april 2025",
+      "titel": { "nl": "Full stack developer (Stage)", "en": "Full-stack Developer (Internship)" },
+      "bedrijf": { "nl": "Metanous, De Pinte", "en": "Metanous, De Pinte" },
+      "periode": { "nl": "februari 2025 – april 2025", "en": "February 2025 – April 2025" },
       "impact": [
-        "Werkte met .NET backend en React frontend",
-        "Bouwde een dashboard tool om bedrijfsprojecten te monitoren (alerts via SMS/email)",
-        "Proof of Concept voor nummerplaatherkenning in C#"
+        { "nl": ".NET backend en React frontend", "en": ".NET backend and React frontend" },
+        { "nl": "Dashboard tool voor monitoring (SMS/e-mail alerts)", "en": "Monitoring dashboard (SMS/email alerts)" },
+        { "nl": "Proof of Concept nummerplaatherkenning in C#", "en": "License-plate recognition PoC in C#" }
       ]
     },
     {
-      "titel": "Eindwerk – Virtuele tour builder",
-      "periode": "2025",
+      "titel": { "nl": "Eindwerk – Virtuele tour builder", "en": "Thesis – Virtual Tour Builder" },
+      "bedrijf": { "nl": "Opleidingsproject", "en": "Graduation project" },
+      "periode": { "nl": "2025", "en": "2025" },
       "impact": [
-        "React frontend en .NET backend",
-        "Platform om jeugdverblijven eenvoudig online te verhuren",
-        "Focus op gebruiksvriendelijkheid en automatisatie van data"
+        { "nl": "React frontend en .NET backend", "en": "React frontend and .NET backend" },
+        { "nl": "Platform om jeugdverblijven eenvoudig online te verhuren", "en": "Platform to easily rent youth accommodations online" },
+        { "nl": "Focus op gebruiksvriendelijkheid en data-automatisatie", "en": "Focus on usability and data automation" }
       ]
     },
     {
-      "titel": "Escape Room Project – Groepswerk",
-      "periode": "2024",
+      "titel": { "nl": "Escape Room Project – Groepswerk", "en": "Escape Room Project – Team effort" },
+      "bedrijf": { "nl": "School / Hobby", "en": "School / Hobby" },
+      "periode": { "nl": "2024", "en": "2024" },
       "impact": [
-        "Teamlead voor interactieve escape game met Arduino’s en Raspberry Pi’s",
-        "Frontend in React, communicatie tussen hardware en webserver opgezet",
-        "Project groeide uit tot eigen hobbyproject"
+        { "nl": "Teamlead voor interactieve escape game met Arduino’s en Raspberry Pi’s", "en": "Team lead for interactive escape game with Arduinos and Raspberry Pis" },
+        { "nl": "Frontend in React, communicatie tussen hardware en webserver opgezet", "en": "React frontend, set up communication between hardware and web server" },
+        { "nl": "Project groeide uit tot eigen hobbyproject", "en": "Project evolved into a personal hobby project" }
       ]
     },
     {
-      "titel": "Hoofdleiding – KSA Deinze",
-      "periode": "2022 – 2024",
+      "titel": { "nl": "Hoofdleiding – KSA Deinze", "en": "Head Leader – KSA Deinze" },
+      "bedrijf": { "nl": "KSA Deinze", "en": "KSA Deinze" },
+      "periode": { "nl": "2022 – 2024 (nu ondersteunend actief)", "en": "2022 – 2024 (still supporting actively)" },
       "impact": [
-        "Leidde en motiveerde een team van leiding",
-        "Organiseerde kampen en evenementen (80+ deelnemers)",
-        "Verantwoordelijk voor planning, veiligheid en communicatie"
+        { "nl": "Leidde en motiveerde een team van leiding", "en": "Led and motivated a team of leaders" },
+        { "nl": "Organiseerde kampen en evenementen (80+ deelnemers)", "en": "Organized camps and events (80+ participants)" },
+        { "nl": "Verantwoordelijk voor planning, veiligheid en communicatie", "en": "Responsible for planning, safety and communication" }
       ]
     }
+  ],
+  "hobbies": [
+    "Gitaar spelen",
+    "Side-projects & programmeren",
+    "Fietsen",
+    "Zwemmen",
+    "Gamen",
+    "Uitgaan met vrienden",
+    "KSA: ondersteunen & organiseren"
   ]
 }
